@@ -1,4 +1,5 @@
 import { Todo } from "@prisma/client";
+import { revalidatePath } from "next/cache";
 
 export const toggleTodo = async (
   id: string,
